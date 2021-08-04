@@ -1,0 +1,4 @@
+pyjwt==1.7.1
+flask-jwt-extended==4.1.0
+pytest
+

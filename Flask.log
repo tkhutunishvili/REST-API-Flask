@@ -1,0 +1,50 @@
+2021-08-04 00:09:39,801 DEBUG settings Thread-3 : Headers: Content-Type: application/json
+Cache-Control: no-cache
+Postman-Token: 7cf4d745-51e1-4ff6-8901-fc0ee4071a9d
+Content-Length: 57
+
+
+2021-08-04 00:09:39,801 DEBUG settings Thread-3 : Body: b'{\n    "username": "user123",\n    "password": "PaSs123"\n\n}'
+2021-08-04 00:09:39,802 DEBUG settings Thread-3 : POST {'username': 'user123', 'password': 'PaSs123'}
+2021-08-04 00:09:39,802 DEBUG settings Thread-3 : Add new user user123, PaSs123
+2021-08-04 00:09:39,812 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/Aug/2021 00:09:39] "[37mPOST /register HTTP/1.1[0m" 200 -
+2021-08-04 00:10:58,620 INFO werkzeug MainThread :  * Detected change in '/Users/nkhutunishvili/Desktop/Python/Flask/app.py', reloading
+2021-08-04 00:10:58,676 INFO werkzeug MainThread :  * Restarting with stat
+2021-08-04 00:10:59,039 WARNING werkzeug MainThread :  * Debugger is active!
+2021-08-04 00:10:59,044 INFO werkzeug MainThread :  * Debugger PIN: 317-708-000
+2021-08-04 00:12:01,047 INFO werkzeug MainThread :  * Detected change in '/Users/nkhutunishvili/Desktop/Python/Flask/app.py', reloading
+2021-08-04 00:12:01,108 INFO werkzeug MainThread :  * Restarting with stat
+2021-08-04 00:12:01,462 WARNING werkzeug MainThread :  * Debugger is active!
+2021-08-04 00:12:01,467 INFO werkzeug MainThread :  * Debugger PIN: 317-708-000
+2021-08-04 00:12:17,653 DEBUG settings MainThread : Headers: User-Agent: werkzeug/1.0.1
+Host: localhost
+Content-Type: application/json
+Content-Length: 46
+Cache-Control: no-cache
+
+
+2021-08-04 00:12:17,653 DEBUG settings MainThread : Body: b'{"password": "TaTi21", "username": "user2111"}'
+2021-08-04 00:12:17,653 DEBUG settings MainThread : POST {'password': 'TaTi21', 'username': 'user2111'}
+2021-08-04 00:12:17,653 DEBUG settings MainThread : Add new user user2111, TaTi21
+2021-08-04 00:13:08,819 DEBUG settings MainThread : Headers: User-Agent: werkzeug/1.0.1
+Host: localhost
+Content-Type: application/json
+Content-Length: 46
+Cache-Control: no-cache
+
+
+2021-08-04 00:13:08,820 DEBUG settings MainThread : Body: b'{"password": "TaTi21", "username": "user2111"}'
+2021-08-04 00:13:08,820 DEBUG settings MainThread : POST {'password': 'TaTi21', 'username': 'user2111'}
+2021-08-04 00:13:08,820 DEBUG settings MainThread : Add new user user2111, TaTi21
+2021-08-04 00:14:14,625 INFO werkzeug MainThread :  * Detected change in '/Users/nkhutunishvili/Desktop/Python/Flask/AnimalModel.py', reloading
+2021-08-04 00:14:14,681 INFO werkzeug MainThread :  * Restarting with stat
+2021-08-04 00:14:15,020 WARNING werkzeug MainThread :  * Debugger is active!
+2021-08-04 00:14:15,025 INFO werkzeug MainThread :  * Debugger PIN: 317-708-000
+2021-08-04 00:15:12,988 INFO werkzeug MainThread :  * Detected change in '/Users/nkhutunishvili/Desktop/Python/Flask/AnimalModel.py', reloading
+2021-08-04 00:15:13,040 INFO werkzeug MainThread :  * Restarting with stat
+2021-08-04 00:15:13,379 WARNING werkzeug MainThread :  * Debugger is active!
+2021-08-04 00:15:13,384 INFO werkzeug MainThread :  * Debugger PIN: 317-708-000
+2021-08-04 00:15:26,611 INFO werkzeug MainThread :  * Detected change in '/Users/nkhutunishvili/Desktop/Python/Flask/settings.py', reloading
+2021-08-04 00:15:26,664 INFO werkzeug MainThread :  * Restarting with stat
+2021-08-04 00:15:27,007 WARNING werkzeug MainThread :  * Debugger is active!
+2021-08-04 00:15:27,012 INFO werkzeug MainThread :  * Debugger PIN: 317-708-000

@@ -1,0 +1,40 @@
+from flask_sqlalchemy import SQLAlchemy
+from settings import app
+import uuid
+from  werkzeug.security import generate_password_hash, check_password_hash
+
+
+db = SQLAlchemy(app)
+
+class User(db.Model):
+	__tablename__ = 'users'
+	# id = db.Column(db.Integer, primary_key=True)
+	# username = db.Column(db.String(80), unique=True, nullable=False)
+	# password = db.Column(db.String(80), nullable=False)
+	id = db.Column(db.Integer, primary_key = True)
+	public_id = db.Column(db.String(50), unique = True)
+	username = db.Column(db.String(100))
+ 	# email = db.Column(db.String(70), unique = True)
+	password = db.Column(db.String(80))
+
+	# def __repr__(self):
+	# 	return str({
+	# 		'public_id': self.public_id,
+	# 		'username': self.username,
+	# 		'password': self.password
+	# 		})
+
+	def username_password_match(_username, _password):
+		user = User.query.filter_by(username=_username).filter_by(password=_password).first()
+		if user is None:
+			return False
+		else:
+			return True
+
+	def getAllUsers():
+		return User.query.all()
+
+	def createUser(_username, _password):
+		new_user = User(public_id = str(uuid.uuid4()), username=_username, password=generate_password_hash(_password))
+		db.session.add(new_user)
+		db.session.commit()
