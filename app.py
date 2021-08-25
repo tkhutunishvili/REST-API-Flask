@@ -127,6 +127,19 @@ def create_user():
         return jsonify({'message':'New user created!'})
     return jsonify({'message':'User already exists'})
 
+@app.route("/remove/<username>", methods=['DELETE'])
+@token_required
+def delete_user(current_user, username):
+    app.logger.debug('DELETE %s', request.get_json())
+    if(User.deleteUser(username)):
+        response = Response("", status=204)
+        return jsonify({'message':'User was deleted!'})
+    invalidUserObjectErrorMsg = {
+        "error": "User with provided name not found, no user was deleted.",
+    }
+    response = Response(json.dumps(invalidUserObjectErrorMsg), status=404, mimetype='application/json')
+    return response
+
 def ValidAnimalObject(animalObject):
     if ('name' in animalObject and 'price' in animalObject and 'centerid' in animalObject and 'species' in animalObject and 'age' in animalObject):
         return True
